@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "_id": "admin-seed-id-0000",
+      "name": "System Admin",
+      "email": "admin@volunteer.com",
+      "password": "$2a$10$PI5Erq0ZcGtJmkCc7tw1MehfQ6TuPug64/kx3.OF6M4EH0MJBxY.2",
+      "role": "admin",
+      "skills": [
+        "Management",
+        "Coordination"
+      ],
+      "availability": "Flexible",
+      "bio": "System Administrator account.",
+      "phone": "+15550199",
+      "isVerified": true,
+      "hoursVolunteered": 0,
+      "createdAt": "2026-06-25T04:37:44.429Z"
+    }
+  ],
+  "events": [
+    {
+      "_id": "event-seed-1",
+      "title": "Community Food Drive 2026",
+      "description": "Help distribute meals and coordinate food packing for families in need.",
+      "date": "2026-07-10",
+      "location": "Downtown Community Center",
+      "requiredSkills": [
+        "Packing",
+        "Heavy Lifting",
+        "Coordination"
+      ],
+      "maxVolunteers": 15,
+      "currentVolunteers": 0,
+      "status": "open",
+      "createdAt": "2026-06-25T04:37:44.429Z"
+    },
+    {
+      "_id": "event-seed-2",
+      "title": "Park Clean Up & Tree Planting",
+      "description": "Planting new saplings and clearing debris from the city central park trail.",
+      "date": "2026-08-05",
+      "location": "Central Green Park",
+      "requiredSkills": [
+        "Gardening",
+        "Outdoors"
+      ],
+      "maxVolunteers": 25,
+      "currentVolunteers": 0,
+      "status": "open",
+      "createdAt": "2026-06-25T04:37:44.429Z"
+    }
+  ],
+  "registrations": []
+}

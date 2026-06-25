@@ -1,17 +1,20 @@
+const dotenv = require('dotenv');
+// Load environment variables
+dotenv.config();
+
 const express = require('express');
 const cors = require('cors');
-const dotenv = require('dotenv');
 const { connectDB } = require('./config/db');
 const { dbClient } = require('./database/dbClient');
 const { verifyToken, isAdmin } = require('./middleware/auth');
 
-// Load environment variables
-dotenv.config();
-
 const app = express();
 
 // Middlewares
-app.use(cors({ origin: '*' })); // Permissive CORS for development
+app.use(cors({
+  origin: process.env.CLIENT_URL,
+  credentials: true
+}));
 app.use(express.json());
 
 // Import controllers
